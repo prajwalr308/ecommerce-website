@@ -15,10 +15,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+
     'djecom',
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'crispy_forms',
     'core',
 ]
 
@@ -92,3 +94,8 @@ AUTHENTICATION_BACKENDS = (
 )
 
 SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+
+
+# crispy forms
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
